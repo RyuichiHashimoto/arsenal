@@ -1,5 +1,12 @@
 # Arsenal
 
+## NOTE
+
+This repository is a customized version for a certain repository.<br>
+Please refer to [the original repository](https://github.com/Orange-Cyberdefense/arsenal) for the latest version.
+
+## header
+
 ![](img/logo.png)
 
 Arsenal is just a quick inventory, reminder and launcher for pentest commands.
