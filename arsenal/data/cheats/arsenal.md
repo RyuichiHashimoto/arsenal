@@ -32,8 +32,7 @@
 ## Set wordlist
 wordlists (nbline): 
 - password
-/usr/share/seclists/Passwords/darkweb2017-top1000.txt (999)
-/usr/share/wordlists/rockyou.txt (14M)
+/home/work/wordlist/rockyou.txt (14M)
 
 - Web
 /usr/share/seclists/Discovery/Web-Content/common-and-french.txt (4906)
