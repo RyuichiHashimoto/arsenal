@@ -73,3 +73,14 @@ nmap -Pn -sS -T4 --open --script smb-security-mode -p445 <ip>
 ```
 proxychains nmap -n -sT -sV -Pn --open -oA <output_file> -iL <targets_file>
 ```
+
+## nmap - scan port with tcp full scan (-sT) and enumerate service
+```
+nmap-scan-port-well-known-port  <target-ip>
+```
+
+## nmap - scan port with tcp full scan and enumerate service
+```
+nmap-scan-port-all-port  <target-ip>
+```
+
