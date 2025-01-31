@@ -149,3 +149,13 @@ sublist3r -d <domain> -v
 ```
 sublist3r -b -d <domain>
 ```
+
+% dns, sublist3r , 53
+
+## dns ffuf - subdomain enumeration with Host Header
+#plateform/linux  #target/remote  #cat/RECON
+```
+ffuf -w <subdomain-wordlist>  -H "Host: FUZZ.<domain>" -u <url> -ic
+```
+
+= subdomain-wordlist: /home/work/wordlist/combined_subdomains.txt

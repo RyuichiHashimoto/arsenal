@@ -25,6 +25,12 @@ smbclient \\\\<ip>\\<share> -U "<user>%"
 smbclient \\\\<ip>\\<share> -U "%"
 ```
 
+## smbclient enumerate shares
+#plateform/linux #target/remote #port/445 #protocol/smb #cat/RECON
+```
+smbclient -L //<ip>
+```
+
 ## smb - find not signed  smb
 #plateform/linux #target/remote #port/445 #protocol/smb #cat/RECON 
 ```
