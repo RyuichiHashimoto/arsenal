@@ -522,6 +522,18 @@ Enable history on source domain for target domain (useful for forest extra SID e
 netdom trust <source_domain> /d:<target_domain> /enablesidhistory:yes
 ```
 
+## Active Directory: parse a Group Policy Preferences XML file 
+Decrypts the cpassword attribute of a Group Policy Preferences XML file
+```
+gpp-decrypt -f <xml-file>
+```
+
+## Active Directory: decrypts the cpassword attribute of Group Policy Preferences XML file
+Decrypts the cpassword attribute
+```
+gpp-decrypt -c <cpassword>
+```
+
 % windows, cve
 ## windows eternal blue - smb - ms17-010
 ```
