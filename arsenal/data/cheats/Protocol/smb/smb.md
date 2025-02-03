@@ -31,6 +31,13 @@ smbclient \\\\<ip>\\<share> -U "%"
 smbclient -L //<ip>
 ```
 
+## smb: download files recursively
+#plateform/linux #target/remote #port/445 #protocol/smb
+```
+smbget -R smb://<target-ip>/<Share>/<file>
+```
+
+
 ## smb - find not signed  smb
 #plateform/linux #target/remote #port/445 #protocol/smb #cat/RECON 
 ```
