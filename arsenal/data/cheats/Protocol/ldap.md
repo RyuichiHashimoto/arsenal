@@ -38,6 +38,12 @@ ldapsearch -x -H ldap://<dc_fqdn> -D <domain>\\<username> -w '<password>' -b 'DC
 ldapsearch -x -H ldap://<dc_fqdn> -D <domain>\\<username> -w '<password>' -b 'DC=<domain>,DC=<path>' '(&(objectCategory=person)(objectClass=user))'
 ```
 
+## ldapsearch - list all valid users
+#cat/ATTACK/CONNECT 
+```
+ldapsearch -x -H ldap://<dc_fqdn> -D <domain>\\<username> -w '<password>' -b 'DC=<domain>,DC=<path>' '(&(objectCategory=person)(objectClass=user)(!(useraccountcontrol:1.2.840.113556.1.4.803:=2)))' samaccountname
+```
+
 ## ldapsearch - list all users protected by adminCount
 #cat/ATTACK/CONNECT 
 ```
