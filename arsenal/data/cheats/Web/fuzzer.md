@@ -25,7 +25,7 @@ gobuster dir -u <url> -w <wordlist-web> -x json,html,php,txt
 
 ## gobuster directory-scan for Common Gateway Interface(cgi)
 ```
-gobuster dir -u <url>/cgi-bin/ -w <wordlist-web> -x .cgi,.sh,.pl
+gobuster dir -u <url>/cgi-bin/ -w <wordlist-web> -x .cgi,.sh,.pl,.py
 ```
 
 # wfuzz
