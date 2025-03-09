@@ -84,3 +84,7 @@ nmap-scan-port-well-known-port  <target-ip>
 nmap-scan-port-all-port  <target-ip>
 ```
 
+## nmap - scan vulnerability and enumerate vulnerability
+```
+nmap-scan-vulnerability <target-ip>
+```
