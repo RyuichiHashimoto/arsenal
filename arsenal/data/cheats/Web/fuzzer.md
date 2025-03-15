@@ -8,10 +8,16 @@
 gobuster dir -u <url> -w <wordlist-web>
 ```
 
+## Gobuster classic scan without TLS certificate validation
+```
+gobuster dir -u <url> -w <wordlist-web> -k
+```
+
 ## gobuster scan pentest classic fuzz
 ```
 gobuster dir -u <url> -w <wordlist-web> -x json,html,php,txt,xml,md
 ```
+
 
 ## gobuster scan high rate
 ```
