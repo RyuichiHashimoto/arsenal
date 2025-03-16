@@ -33,6 +33,13 @@ ftp <ip> <port>
 nmap -v -p 21 --script=ftp-anon.nse <ip>
 ```
 
+## ftp - get the running FTP service
+#cat/RECON
+```
+nc 10.129.104.137 21
+```
+
+
 ## ftp - msf bruteforce login
 #cat/ATTACK/BRUTEFORCE-SPRAY
 ```
