@@ -13,6 +13,13 @@ nbtscan -r <ip_range>
 smbclient \\\\<ip>\\<share> -U "<user>%<password>"
 ```
 
+## smbclient enumerate shares without password
+#plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
+```
+smbclient -L \\\\<ip>
+```
+
+
 ## smbclient sessions without password
 #plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
 ```
@@ -48,4 +55,16 @@ nmap -Pn -sS -T4 --open --script smb-security-mode -p445 <ip>
 #plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
 ```
 mount -t cifs //<ip>/C\$ /tmp/mnttarget/ -o username=<user> -o domain=<domain>
+```
+
+### smbclient download all files in the share drive without credential
+#plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
+```
+smbget -R smb://<ip>/<share> 
+```
+
+### smbclient download all files in the share drive
+#plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
+```
+smbget -R smb://<ip>/<share>  -u <username> -p <password>
 ```
