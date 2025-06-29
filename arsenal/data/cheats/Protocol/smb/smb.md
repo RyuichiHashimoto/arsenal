@@ -66,5 +66,5 @@ smbget -R smb://<ip>/<share>
 ### smbclient download all files in the share drive
 #plateform/linux #target/remote #port/445 #protocol/smb #cat/ATTACK/CONNECT  
 ```
-smbget -R smb://<ip>/<share>  -u <username> -p <password>
+smbget -R smb://<ip>/<share>  -U <username>
 ```
