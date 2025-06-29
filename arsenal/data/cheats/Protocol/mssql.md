@@ -33,6 +33,12 @@ mssql-export-table <ip> <user> <password> <db> <table>
 mssql-export-all-tables <ip> <user> <password> <db>
 ```
 
+## mssql - erase empty log file in a current directory
+#CAT/RECON
+```
+find . -maxdepth 1 -type f -name '*.log'   -exec sh -c 'grep -qP "[^[:space:]]" "$1" || { echo "delete: $1"; rm -- "$1"; }' _ {} \;
+```
+
 
 ## mssql - enum
 #cat/RECON
