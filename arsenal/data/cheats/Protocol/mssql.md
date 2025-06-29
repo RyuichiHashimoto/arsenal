@@ -6,8 +6,33 @@
 ## mssql - connect
 #cat/ATTACK/CONNECT 
 ```
-sqsh -S <ip> -U <user>
+sqlcmd -S <ip> -U <user> -P <password>
 ```
+
+## mssql - enumerate databases
+#cat/RECON
+```
+sqlcmd -S <ip> -U <user> -P <password> -Q "SELECT name FROM sys.databases ORDER BY name;"
+```
+
+## mssql - enumerate tables in a database
+#cat/RECON
+```
+sqlcmd -S <ip> -U <user> -P <password> -d "<db>" -Q "SET NOCOUNT ON; SELECT TABLE_SCHEMA + '.' + TABLE_NAME AS TableName FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' ORDER BY TABLE_SCHEMA, TABLE_NAME;"
+```
+
+## mssql - export a table to file
+#cat/ATTACK/EXPLOIT
+```
+mssql-export-table <ip> <user> <password> <db> <table>
+```
+
+## mssql - export all tables to file
+#cat/ATTACK/EXPLOIT
+```
+mssql-export-all-tables <ip> <user> <password> <db>
+```
+
 
 ## mssql - enum
 #cat/RECON
