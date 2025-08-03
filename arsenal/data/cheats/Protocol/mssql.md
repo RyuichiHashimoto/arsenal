@@ -9,6 +9,13 @@
 sqlcmd -S <ip> -U <user> -P <password>
 ```
 
+## mssql - connect with windows defauilt authentication
+#cat/ATTACK/EXPLOIT
+```
+mssqlclient <user>@<ip> -windows-auth
+```
+
+
 ## mssql - enumerate databases
 #cat/RECON
 ```
@@ -32,6 +39,7 @@ mssql-export-table <ip> <user> <password> <db> <table>
 ```
 mssql-export-all-tables <ip> <user> <password> <db>
 ```
+
 
 ## mssql - erase empty log file in a current directory
 #CAT/RECON
