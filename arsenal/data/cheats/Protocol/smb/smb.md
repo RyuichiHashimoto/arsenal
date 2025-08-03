@@ -46,7 +46,7 @@ smbget -R smb://<target-ip>/<Share>/<file>
 
 
 ## smb - find not signed  smb
-#plateform/linux #target/remote #port/445 #protocol/smb #cat/RECON 
+#plateform/linux #target/remote #port/445 #protocol/smb #ATTACK/CONNECT  
 ```
 nmap -Pn -sS -T4 --open --script smb-security-mode -p445 <ip>
 ```
