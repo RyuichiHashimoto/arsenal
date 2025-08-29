@@ -292,5 +292,3 @@ cme mssql <ip> -u <user> -p '<password>' --local-auth -q 'SELECT name FROM maste
 ```bash
 cme mssql <ip> -u <user> -p '<password>' --local-auth -x <cmd|whoami>
 ```
-
-= ip: 192.168.1.0/24
